@@ -308,6 +308,10 @@ def main():
     parser.add_argument("-v", "--version", action="version", version=__version__)
 
     args = parser.parse_args()
+
+    if args.url.isdigit():
+        args.url = 'http://localhost:%s' % args.url
+
     state = session_state(args.url, verify=args.insecure)
 
     if args.shutdown_all:

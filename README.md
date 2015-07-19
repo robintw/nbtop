@@ -21,7 +21,7 @@ optional arguments:
   -k, --insecure     no verification of SSL certificates
   -l, --links        display full notebook URLs
   --shutdown-all     shutdown all notebooks on the server
-  -u URL, --url URL  IPython notebook server url
+  -u URL, --url URL  IPython notebook server url, or port (assumes running on localhost)
 ```
 
 installation
