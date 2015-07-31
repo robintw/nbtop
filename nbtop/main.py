@@ -17,7 +17,7 @@ import requests
 import argparse
 import warnings
 from time import sleep
-from version import __version__
+from .version import __version__
 from psutil import process_iter
 from curses import color_pair, wrapper
 from os.path import splitext, basename
